@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack"
+    tools:context=".CreateAnAccount">
+
+    <TextView
+        android:id="@+id/tv_create_an_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/ms500"
+        android:text="@string/tv_create_an_account"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:longClickable="false"
+        android:clickable="false"/>
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/ms500"
+        android:paddingTop="50dp"
+        android:text="@string/tv_email_address"
+        android:paddingLeft="50dp"
+        android:layout_below="@id/tv_create_an_account"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:longClickable="false"
+        android:clickable="false"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_email"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:ems="9"
+        android:textSize="29dp"
+        android:inputType="textEmailAddress" />
+    <ImageView
+        android:id="@+id/iv_tick_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@id/et_email"
+        android:layout_below="@id/tv_email"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/tick" />
+    <ImageView
+        android:id="@+id/iv_cross_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_email"
+        android:paddingTop="2dp"
+        android:layout_toRightOf="@id/et_email"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cross" />
+
+    <TextView
+        android:id="@+id/tv_create_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/ms500"
+        android:paddingTop="30dp"
+        android:text="@string/tv_create_password"
+        android:paddingLeft="50dp"
+        android:layout_below="@id/et_email"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:longClickable="false"
+        android:clickable="false"/>
+
+    <EditText
+        android:id="@+id/et_create_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_create_password"
+        android:layout_centerInParent="true"
+        android:hint="@string/et_see_criteria_below"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:textSize="29dp"
+        android:ems="9"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/iv_tick_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/et_create_password"
+        android:paddingTop="10dp"
+        android:layout_below="@id/tv_create_password"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/tick" />
+    <ImageView
+        android:id="@+id/iv_cross_create_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_create_password"
+        android:layout_toRightOf="@id/et_create_password"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cross" />
+
+    <TextView
+        android:id="@+id/tv_repeat_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/ms500"
+        android:paddingTop="30dp"
+        android:text="@string/tv_repeat_password"
+        android:paddingLeft="50dp"
+        android:layout_below="@id/et_create_password"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:longClickable="false"
+        android:clickable="false"/>
+
+    <EditText
+        android:id="@+id/et_repeat_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_repeat_password"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+        android:background="@color/colorWhite"
+        android:ems="9"
+        android:inputType="textPassword"
+        android:textSize="29dp"/>
+
+    <ImageView
+        android:id="@+id/iv_tick_repeat_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/et_repeat_password"
+        android:paddingTop="10dp"
+        android:layout_below="@id/tv_repeat_password"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/tick" />
+
+    <ImageView
+        android:id="@+id/iv_cross_repeat_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_repeat_password"
+        android:layout_toRightOf="@id/et_repeat_password"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/cross" />
+
+    <TextView
+        android:id="@+id/tv_password_req"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_repeat_password"
+        android:clickable="false"
+        android:fontFamily="@font/ms300"
+        android:paddingTop="30dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:gravity="left"
+        android:longClickable="false"
+        android:text="@string/tv_password_criteria"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_next_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_repeat_password"
+        android:layout_marginTop="151dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="60dp"
+        android:paddingRight="40dp"
+        app:srcCompat="@drawable/gradient_button_background" />
+
+    <TextView
+        android:id="@+id/tv_next_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_next_page"
+        android:layout_alignTop="@id/iv_next_page"
+        android:layout_alignRight="@id/iv_next_page"
+        android:layout_alignBottom="@id/iv_next_page"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:fontFamily="@font/ms500"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:text="@string/tv_next"
+        android:textColor="#000000" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GreenFlag</string>
+    <string name="txt_green_flag">Green Flag</string>
+    <string name="tv_create_an_account">Create an account</string>
+    <string name="tv_email_address">Email address</string>
+    <string name="tv_create_password">Create Password</string>
+    <string name="et_see_criteria_below">See criteria below</string>
+    <string name="tv_repeat_password">Repeat Password</string>
+    <string name="tv_password_criteria">Your password should have a minimum of 8 characters and contain at least one number, one uppercase and one lower case letter. You can use special characters.</string>
+    <string name="tv_next">Next</string>
+    <string name="et_name">Name</string>
+    <string name="et_username">Username</string>
+    <string name="et_password">Password</string>
+    <string name="tv_change_photo">CHANGE PHOTO</string>
+    <string name="et_age">Age</string>
+    <string name="rd_female">Female</string>
+    <string name="rd_male">Male</string>
+    <string name="rd_not_specified">Not Specified</string>
+    <string name="tv_save">Save</string>
+</resources>
