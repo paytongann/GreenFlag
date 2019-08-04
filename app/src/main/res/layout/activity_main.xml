@@ -22,12 +22,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ms500"
-        android:text="GreenFlag customers can create an account to access"
-        android:textColor="#FFFFFF"
+        android:text="@string/tv_txt_homescreen_logo"
+        android:textColor="@color/colorWhite"
         android:paddingTop="50dp"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
-        android:textSize="22dp"/>
+        android:textSize="22sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,9 +49,9 @@
             android:layout_height="wrap_content"
             android:paddingTop="20dp"
             android:fontFamily="@font/ms300"
-            android:text="Car health updates"
-            android:textColor="#FFFFFF"
-            android:textSize="22dp" />
+            android:text="@string/tv_txt_car_health_updates"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
 
     </LinearLayout>
 
@@ -75,9 +75,9 @@
             android:layout_height="wrap_content"
             android:paddingTop="20dp"
             android:fontFamily="@font/ms300"
-            android:text="Request a rescue online"
-            android:textColor="#FFFFFF"
-            android:textSize="22dp" />
+            android:text="@string/tv_txt_request"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
 
     </LinearLayout>
 
@@ -101,9 +101,9 @@
             android:layout_height="wrap_content"
             android:paddingTop="20dp"
             android:fontFamily="@font/ms300"
-            android:text="Policy information"
-            android:textColor="#FFFFFF"
-            android:textSize="22dp" />
+            android:text="@string/tv_txt_policy"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
 
     </LinearLayout>
 
@@ -134,10 +134,10 @@
             android:layout_marginEnd="1dp"
             android:layout_marginRight="1dp"
             android:fontFamily="@font/ms500"
-            android:textSize="22dp"
+            android:textSize="22sp"
             android:gravity="center"
-            android:text="Create an account"
-            android:textColor="#000000" />
+            android:text="@string/tv_txt_create_an_account"
+            android:textColor="@color/colorBlack" />
     </RelativeLayout>
 
 </LinearLayout>

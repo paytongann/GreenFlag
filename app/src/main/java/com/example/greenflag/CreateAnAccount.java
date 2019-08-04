@@ -1,5 +1,6 @@
 package com.example.greenflag;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
@@ -39,6 +41,9 @@ public class CreateAnAccount extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_an_account);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Create an account");
 
         email = findViewById(R.id.et_email);
         createPassword = findViewById(R.id.et_create_password);

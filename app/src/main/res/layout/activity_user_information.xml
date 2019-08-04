@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@color/colorBlack"
     tools:context=".CreateAnAccount"
-    android:paddingTop="50dp"
+    android:paddingTop="20dp"
     android:paddingLeft="30dp">
 
     <EditText
@@ -16,9 +16,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:hint="@string/et_name"
-    android:layout_weight="1"
     android:background="@color/colorWhite"
-    android:textSize="29dp"
+    android:textSize="29sp"
     android:ems="8"
     android:inputType="textPersonName" />
 
@@ -27,9 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/et_username"
-        android:layout_weight="1"
         android:background="@color/colorWhite"
-        android:textSize="29dp"
+        android:textSize="29sp"
         android:ems="8"
         android:inputType="textPersonName"
         android:layout_below="@id/et_name"
@@ -40,9 +38,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/et_password"
-        android:layout_weight="1"
         android:background="@color/colorWhite"
-        android:textSize="29dp"
+        android:textSize="29sp"
         android:ems="8"
         android:inputType="textPassword"
         android:layout_below="@id/et_username"
@@ -69,43 +66,42 @@
         android:fontFamily="@font/ms500"
         android:gravity="center"
         android:text="@string/tv_change_photo"
-        android:textColor="#000000"
-        android:textSize="22dp" />
+        android:textColor="@color/colorBlack"
+        android:textSize="22sp" />
 
     <EditText
         android:id="@+id/et_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/et_age"
-        android:layout_weight="1"
         android:background="@color/colorWhite"
-        android:textSize="29dp"
+        android:textSize="29sp"
         android:ems="8"
         android:layout_marginTop="5dp"
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         android:layout_below="@id/iv_change_photo" />
 
-    <EditText
+    <Button
         android:id="@+id/et_birth_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_age"
-        android:ems="7"
+        android:ems="9"
         android:clickable="true"
-        android:text="Choose Birth Date"
+        android:text="@string/btn_txt_choose_birth_date"
         android:layout_marginTop="15dp"
         android:background="@color/colorWhite"
-        android:textSize="29dp" />
+        android:textSize="23sp" />
 
-    <EditText
+    <Button
         android:id="@+id/et_country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Not-Specified"
+        android:text="@string/btn_txt_choose_a_country"
         android:layout_weight="1"
         android:background="@color/colorWhite"
-        android:textSize="29dp"
-        android:ems="8"
+        android:textSize="23sp"
+        android:ems="9"
         android:layout_marginTop="15dp"
         android:inputType="date"
         android:layout_below="@id/et_birth_date"/>
@@ -115,14 +111,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ms500"
-        android:text="Gender"
+        android:text="@string/tv_txt_gender"
         android:textColor="@color/colorWhite"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_below="@id/et_country"/>
 
     <RadioGroup
         android:id="@+id/groupradio"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="390dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
 
@@ -132,7 +128,7 @@
             android:id="@+id/radio_female"
             android:text="@string/rd_female"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:buttonTint="@color/colorWhite"/>
 
         <RadioButton
@@ -141,7 +137,7 @@
             android:id="@+id/radio_male"
             android:text="@string/rd_male"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:buttonTint="@color/colorWhite"/>
 
         <RadioButton
@@ -150,7 +146,7 @@
             android:id="@+id/radio_not_specified"
             android:text="@string/rd_not_specified"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:buttonTint="@color/colorWhite"
             android:checked="true"/>
     </RadioGroup>
@@ -167,8 +163,8 @@
         android:layout_width="273dp"
         android:layout_height="46dp"
         android:layout_below="@id/et_password"
-        android:layout_marginTop="382dp"
-        app:srcCompat="@drawable/gradient_button_background"/>
+        android:layout_marginTop="399dp"
+        app:srcCompat="@drawable/gradient_button_background" />
 
     <TextView
         android:id="@+id/tv_save"
@@ -178,11 +174,15 @@
         android:layout_alignTop="@id/iv_save"
         android:layout_alignRight="@id/iv_save"
         android:layout_alignBottom="@id/iv_save"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="-3dp"
+        android:layout_marginBottom="-2dp"
         android:fontFamily="@font/ms500"
         android:gravity="center"
         android:text="@string/tv_save"
-        android:textColor="#000000"
-        android:textSize="22dp" />
+        android:textColor="@color/colorBlack"
+        android:textSize="22sp" />
 
     <EditText
         android:id="@+id/et_postal_address"

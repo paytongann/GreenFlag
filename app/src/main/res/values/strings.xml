@@ -17,4 +17,20 @@
     <string name="rd_male">Male</string>
     <string name="rd_not_specified">Not Specified</string>
     <string name="tv_save">Save</string>
+    <string name="tv_txt_homescreen_logo">GreenFlag customers can create an account to access</string>
+    <string name="tv_txt_car_health_updates">Car health updates</string>
+    <string name="tv_txt_request">Request a rescue online</string>
+    <string name="tv_txt_policy">Policy information</string>
+    <string name="tv_txt_create_an_account">Create an account</string>
+    <string name="btn_txt_choose_birth_date">Choose Birth Date</string>
+    <string name="btn_txt_choose_a_country">CHOOSE A COUNTRY</string>
+    <string name="tv_txt_gender">Gender</string>
+    <string name="tv_txt_profile_name">Name</string>
+    <string name="txt_tv_profile_username">Username</string>
+    <string name="tv_txt_profile_age">Age</string>
+    <string name="tv_txt_profile_birthdate">Birth Date</string>
+    <string name="tv_txt_profile_country">Country</string>
+    <string name="tv_txt_profile_gender">Gender</string>
+    <string name="tv_txt_profile_postalcode">Postal Code</string>
+    <string name="tv_txt_welcome">Welcome back</string>
 </resources>

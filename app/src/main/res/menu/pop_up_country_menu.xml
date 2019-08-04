@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:id="@+id/i_not_specified"
+    android:title="Not Specified"/>
+    <item
+        android:id="@+id/i_malaysia"
+        android:title="Malaysia"/>
+    <item
+        android:id="@+id/i_united_states"
+        android:title="United States"/>
+    <item
+        android:id="@+id/i_indonesia"
+        android:title="Indonesia"/>
+    <item
+        android:id="@+id/i_france"
+        android:title="France"/>
+    <item
+        android:id="@+id/i_italy"
+        android:title="Italy"/>
+    <item
+        android:id="@+id/i_singapore"
+        android:title="Singapore"/>
+    <item
+        android:id="@+id/i_new_zealand"
+        android:title="New Zealand"/>
+    <item
+        android:id="@+id/i_india"
+        android:title="India"/>
+
+</menu>
