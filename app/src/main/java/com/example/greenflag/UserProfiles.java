@@ -2,9 +2,14 @@ package com.example.greenflag;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -32,8 +37,6 @@ public class UserProfiles extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profiles);
         recyclerView = findViewById(R.id.rv_list_task);
-        currentProfile = findViewById(R.id.current_profile_pic);
-        currentName = findViewById(R.id.current_name);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         readTask();
@@ -110,7 +113,5 @@ public class UserProfiles extends AppCompatActivity {
         }
         adapter = new CustomAdapter(dataset);
         recyclerView.setAdapter(adapter);
-        //String currentNameString = getIntent().getStringExtra("Name");
-        //currentName.setText(currentNameString);
     }
 }
